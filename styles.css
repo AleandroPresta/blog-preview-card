@@ -1,0 +1,47 @@
+/* Define all variables in a single :root block */
+:root {
+    --yellow-primary: hsl(47, 88%, 63%);
+    --white-neutral: hsl(0, 0%, 100%);
+    --grey-neutral: hsl(0, 0%, 50%);
+    --black-neutral: hsl(0, 0%, 7%);
+  }
+  
+  /* Make the container full-screen */
+  body {
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Set body height to full screen */
+    width: 100vw; /* Set body width to full screen */
+  }
+  
+  .container {
+    height: 100%; /* Make container full height */
+    width: 100%; /* Make container full width */
+    background-color: var(--yellow-primary);
+    display: flex; /* Add display flex to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border: 1px solid var(--black-neutral);
+    border-radius: 20px;
+    height: 27em;
+    width: 20em;
+    background-color: var(--white-neutral);
+    padding: 30px;
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  img {
+    border-radius: 20px;
+  }
+  
+  /* Uncomment if you want to use a custom font family */
+  /* font-family: "Figtree", sans-serif; */
